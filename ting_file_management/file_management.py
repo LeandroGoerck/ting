@@ -3,7 +3,8 @@ import sys
 
 def txt_importer(path_file):
     if not path_file.endswith(".txt"):
-        return print("Formato inválido", file=sys.stderr)
+        print("Formato inválido", file=sys.stderr)
+        return None
 
     try:
         with open(path_file) as file:
